@@ -3,7 +3,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25icmV6ZWwiLCJhIjoiY2pwNXNyb3IxMDJwZTNxbzZ4M3IxdGp5ZCJ9.1_DVjqU_cgiK9gt-LGf3DA';
 
 
-//TODO: Do we need a seperate trailNodes object for new nodes/hiking trips?
+//TODO: Do we need a seperate trailNodes object for existing nodes/hiking trips?
 // We could simply load trailNodes as an empty map.addSource and add nodes to this on click
 // And if the user is loading an existing trail, we just prepopulate trailNodes before loading the map
 
@@ -25,7 +25,7 @@ var trailNodes = { //If loading an existing hiking trail, prepopulate this objec
 };
 
 
-var trailPath = { //Object to draw hiking trail between trail ndoes
+var trailPath = { //Object to draw hiking trail between trail ndoes, gets added to trailNodes
     'type': 'Feature',
     'geometry': {
         'type': 'LineString',
