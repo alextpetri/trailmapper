@@ -9,7 +9,7 @@
   "author": "Aaron Brezel and Alex Petri",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-validator": "^6.5.0",
     "mapbox-gl": "^1.10.1"
   }
